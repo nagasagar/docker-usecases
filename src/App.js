@@ -11,7 +11,7 @@ class App extends Component {
           <h2>Welcome to Docker's World</h2>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Inthe world of CI/CD <code>Dockers</code> make things very easy.
         </p>
       </div>
     );
