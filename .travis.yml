@@ -7,4 +7,4 @@ before_install:
   - docker build -t nagasagar/docker-usecase -f Dockerfile.dev .
 
 script:
-  - docker run nagasagar/docker-usecase npm run tests -- --coverage
+  - docker run nagasagar/docker-usecase npm run test -- --coverage
