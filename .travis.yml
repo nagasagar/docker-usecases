@@ -8,3 +8,17 @@ before_install:
 
 script:
   - docker run nagasagar/docker-usecase npm run test -- --coverage
+
+
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-central-1"
+  app: "docker-usecase"
+  env: "DockerUsecase-env"
+  bucket_name: "elasticbeanstalk-eu-central-1-579614756817"
+  bucket_path: "docker-usecase"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
